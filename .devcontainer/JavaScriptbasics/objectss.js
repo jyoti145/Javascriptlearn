@@ -82,8 +82,20 @@ const userData=[
     }
 ]
 //console.log(userData[0].Name)
-console.log(myObjj)
+//console.log(myObjj)
 //in this the output value milegi the data type of that output value is  an array 
-console.log(Object.keys(myObjj));
-console.log(Object.values(myObjj))
-console.log(myObjj.hasOwnProperty('Namee'))
+// console.log(Object.keys(myObjj));
+// console.log(Object.values(myObjj))
+// console.log(myObjj.hasOwnProperty('Namee'))
+
+//destructure the value 
+
+const course ={
+    Name:"mca",
+    price:1000,
+    courseTeacher:"Striver"
+}
+//here we change the key of object for teacher now we print it then it give to us course teacher also same value
+
+const{courseTeacher:Teacher} = course
+console.log(Teacher)
